@@ -1,0 +1,49 @@
+.loading-outer-circle {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-inline: auto;
+    border-radius: 50%;
+    animation: loading 1s ease 0s infinite;
+    animation-fill-mode: initial;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.loading-inner-circle {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    animation: loading 1s ease 0s infinite;
+    animation-fill-mode: initial;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(36deg);
+    }
+    10% {
+        transform: rotate(72deg);
+    }
+    20% {
+        transform: rotate(108deg);
+    }
+    30% {
+        transform: rotate(170deg);
+    }
+    40% {
+        transform: rotate(200deg);
+    }
+    50% {
+        transform: rotate(250deg);
+    }
+    60% {
+        transform: rotate(290deg);
+    }
+    70% {
+        transform: rotate(340deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
